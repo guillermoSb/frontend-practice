@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&display=swap");
+$a-yellow: #fbffa7;
+$a-pink: #d5b3ff;
+$a-orange: #ff764d;
+$a-green: #b6ffc0;
+$a-light-blue: #b1c5ff;
+$a-blue: #0000ff;
+$a-grey: #494949;
+$a-grey-2: #f3f3f3;
+
+* {
+  font-family: "Fredoka", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 10px; // 1rem = 10px
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+
+  &__group {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    &--logo {
+      padding-right: 2rem;
+      width: 60px;
+      height: 28px;
+    }
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}
+.link {
+  text-decoration: none;
+  // padding: 0px 10px;
+  color: #000;
+  font-weight: 400;
+  font-size: 1.75rem;
+
+  &--orange {
+    color: $a-orange;
+  }
+  &--blue {
+    color: $a-blue;
+  }
+  &--small {
+    font-size: 1.25rem;
+  }
+}
+
+.page-about {
+  & > div {
+    margin: 0px auto;
+    &:not(:last-child) {
+      margin-bottom: 8rem;
+    }
+  }
+
+  &__header {
+    background-image: url("assets/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 120px);
+    background-position: 50% 50%;
+    position: relative;
+    margin: 0px 8vw 8vw 8vw;
+  }
+  &__ableton-logo {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: calc(max(30vw, 25rem));
+  }
+
+  &__text {
+    font-size: 1.875rem;
+    width: 50vw;
+    h1 {
+      margin-bottom: 2rem;
+    }
+    .link {
+      font-size: 2.7rem;
+    }
+  }
+
+  &__collage {
+    margin-top: 8vw;
+    margin-bottom: 8vw;
+    padding: 8vw 0 8vw 0;
+    position: relative;
+    &__background {
+      position: absolute;
+      display: inline-block;
+      height: 58vw;
+      width: 58vw;
+      left: 42vw;
+      top: 0;
+      z-index: 0;
+    }
+    &__image {
+      position: relative;
+      vertical-align: middle;
+      z-index: 1;
+      margin-left: calc((26vw) / 3);
+      display: inline-block;
+      &--1 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-image: url("assets/photo-1.jpeg");
+        width: 41vw;
+        height: 41vw;
+      }
+      &--2 {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-image: url("assets/photo-2.jpeg");
+        height: 25vw;
+        width: 33vw;
+      }
+    }
+  }
+}
+
+h1 {
+  font-size: 2.7rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.navbar-separator {
+  border-top: 2px solid $a-grey-2;
+}
+
+.bg-lemonade {
+  background-color: $a-yellow;
+}

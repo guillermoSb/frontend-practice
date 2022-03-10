@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;700&display=swap");
+* {
+  font-family: "Fredoka", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+.navbar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem;
+}
+
+.navbar-menu__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-menu__item--logo {
+  padding-right: 2rem;
+  width: 60px;
+  height: 28px;
+}
+
+.navbar-menu__item:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
+.link--orange {
+  color: #ff764d;
+}
+
+.link--blue {
+  color: #0000ff;
+}
+
+.link--small {
+  font-size: 1.25rem;
+}
+
+.page-about > div {
+  margin: 0px auto;
+}
+
+.page-about > div:not(:last-child) {
+  margin-bottom: 8rem;
+}
+
+.page-about__header {
+  background-image: url("assets/header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 120px);
+  background-position: 50% 50%;
+  position: relative;
+  margin: 0px 8vw 8vw 8vw;
+}
+
+.page-about__ableton-logo {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: calc(max(30vw, 25rem));
+}
+
+.page-about__text {
+  font-size: 1.875rem;
+  width: 50vw;
+}
+
+.page-about__text h1 {
+  margin-bottom: 2rem;
+}
+
+.page-about__text .link {
+  font-size: 2.7rem;
+}
+
+.page-about__collage {
+  margin-top: 8vw;
+  margin-bottom: 8vw;
+  padding: 8vw 0 8vw 0;
+  position: relative;
+}
+
+.page-about__collage__background {
+  position: absolute;
+  display: inline-block;
+  height: 58vw;
+  width: 58vw;
+  left: 42vw;
+  top: 0;
+  z-index: 0;
+}
+
+.page-about__collage__image {
+  position: relative;
+  vertical-align: middle;
+  z-index: 1;
+  margin-left: calc((26vw) / 3);
+  display: inline-block;
+}
+
+.page-about__collage__image--1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("assets/photo-1.jpeg");
+  width: 41vw;
+  height: 41vw;
+}
+
+.page-about__collage__image--2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url("assets/photo-2.jpeg");
+  height: 25vw;
+  width: 33vw;
+}
+
+h1 {
+  font-size: 2.7rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.75rem;
+  font-weight: 300;
+}
+
+.navbar-separator {
+  border-top: 2px solid #f3f3f3;
+}
+
+.bg-lemonade {
+  background-color: #fbffa7;
+}
+/*# sourceMappingURL=style.css.map */
